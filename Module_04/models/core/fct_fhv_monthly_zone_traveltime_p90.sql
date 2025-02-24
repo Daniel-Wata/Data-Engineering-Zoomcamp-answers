@@ -1,0 +1,14 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+
+select 
+    *,
+    PERCENTILE_CONT(trip_duration, 0.90) OVER (
+    PARTITION BY pickup_locationid, pickup_year, pickup_month, dropoff_locationid
+) AS p90
+from {{ ref('dim_fhv_trips') }}
+where pickup_locationid is not null and dropoff_locationid is not null

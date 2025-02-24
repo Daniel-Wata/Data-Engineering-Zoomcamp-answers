@@ -1,6 +1,11 @@
 version: 2
 
 models:
+  - name: fct_taxi_trips_quarterly_revenue
+    description: >
+      Aggregated table of all taxi trips corresponding to both service zones (Green and yellow) per pickup zone, quarter and service.
+      The table contains quarterly sums of the fare elements used to calculate the quarterly revenue. 
+      The table contains also quarterly indicators like number of trips, and average trip distance.
   - name: dim_zones
     description: >
       List of unique zones idefied by locationid. 

@@ -8586,3 +8586,1068 @@ FROM filtered_trips)
 [0m21:24:09.521185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002769D64E950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002769D64E910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002769D64FA10>]}
 [0m21:24:09.521185 [debug] [MainThread]: Flushing usage events
 [0m21:24:11.232578 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:35:56.358576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA6796FB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA6796F190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA6796C8D0>]}
+
+
+============================== 23:35:56.374575 | 2fd150c8-90d7-4a29-ad53-b92a0b1df0f1 ==============================
+[0m23:35:56.374575 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:35:56.375579 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select +dim_fhv_trips', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:36:25.557697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2fd150c8-90d7-4a29-ad53-b92a0b1df0f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA1C55BF90>]}
+[0m23:36:25.762270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2fd150c8-90d7-4a29-ad53-b92a0b1df0f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA1C4DC0D0>]}
+[0m23:36:25.765877 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:36:28.952845 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:36:33.045118 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m23:36:33.048116 [debug] [MainThread]: Partial parsing: added file: taxi_rides_ny://models\staging\stg_fhv_tripdata.sql
+[0m23:36:33.051115 [debug] [MainThread]: Partial parsing: added file: taxi_rides_ny://models\core\dim_fhv_trips.sql
+[0m23:36:33.053117 [debug] [MainThread]: Partial parsing: added file: taxi_rides_ny://models\core\fct_fhv_monthly_zone_traveltime_p90.sql
+[0m23:36:33.056112 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\schema.yml
+[0m23:36:34.013687 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.taxi_rides_ny.stg_fhv_tripdata' (models\staging\stg_fhv_tripdata.sql) depends on a source named 'staging.fhv_tripdata' which was not found
+[0m23:36:34.021697 [debug] [MainThread]: Command `dbt run` failed at 23:36:34.020695 after 37.90 seconds
+[0m23:36:34.024688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA6796FE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA679A0350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA1CD2E890>]}
+[0m23:36:34.026608 [debug] [MainThread]: Flushing usage events
+[0m23:36:34.852132 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:37:46.383771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C06473D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C06473C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C06473910>]}
+
+
+============================== 23:37:46.386778 | b4bda525-d23e-43ca-9576-15cd87693b69 ==============================
+[0m23:37:46.386778 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:37:46.387771 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select +dim_fhv_trips', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:37:47.378037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0486D950>]}
+[0m23:37:47.414603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C01A2D790>]}
+[0m23:37:47.415604 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:37:47.732517 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:37:48.220421 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 2 files changed.
+[0m23:37:48.223430 [debug] [MainThread]: Partial parsing: added file: taxi_rides_ny://models\core\fct_fhv_monthly_zone_traveltime_p90.sql
+[0m23:37:48.225413 [debug] [MainThread]: Partial parsing: added file: taxi_rides_ny://models\staging\stg_fhv_tripdata.sql
+[0m23:37:48.227948 [debug] [MainThread]: Partial parsing: added file: taxi_rides_ny://models\core\dim_fhv_trips.sql
+[0m23:37:48.230476 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\schema.yml
+[0m23:37:48.234474 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\staging\schema.yaml
+[0m23:37:50.840123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3935E350>]}
+[0m23:37:51.210893 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:37:51.284377 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:37:51.888221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C393A34D0>]}
+[0m23:37:51.891250 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:37:51.893271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C04500990>]}
+[0m23:37:51.902950 [info ] [MainThread]: 
+[0m23:37:51.906940 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:37:51.908646 [info ] [MainThread]: 
+[0m23:37:51.912559 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:37:51.929597 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:37:51.931597 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:37:52.737717 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:37:53.244828 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data'
+[0m23:37:53.245819 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:37:53.840914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data, now list_tough-timing-449701-k0_taxi_data_staging)
+[0m23:37:53.884263 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:37:54.357671 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:37:54.359677 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:37:54.822031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3992E6D0>]}
+[0m23:37:54.824023 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:37:54.831279 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_zones
+[0m23:37:54.833114 [info ] [Thread-1 (]: 1 of 3 START sql table model taxi_data_core.dim_zones .......................... [RUN]
+[0m23:37:54.834127 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.dim_zones'
+[0m23:37:54.834127 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_zones
+[0m23:37:54.849530 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_zones"
+[0m23:37:54.853777 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_zones
+[0m23:37:54.934668 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:37:55.514007 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_zones"
+[0m23:37:55.514998 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_zones: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_zones"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+    locationid, 
+    borough, 
+    zone, 
+    replace(service_zone,'Boro','Green') as service_zone 
+from `tough-timing-449701-k0`.`taxi_data`.`taxi_zone_lookup`
+    );
+  
+[0m23:37:55.979230 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:f2782042-2e70-4ab1-bddd-a4c8d55022ba&page=queryresults
+[0m23:38:01.881785 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3983CC90>]}
+[0m23:38:01.882785 [info ] [Thread-1 (]: 1 of 3 OK created sql table model taxi_data_core.dim_zones ..................... [[32mCREATE TABLE (265.0 rows, 14.2 KiB processed)[0m in 7.04s]
+[0m23:38:01.882785 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_zones
+[0m23:38:01.884347 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:38:01.884347 [info ] [Thread-1 (]: 2 of 3 START sql view model taxi_data_staging.stg_fhv_tripdata ................. [RUN]
+[0m23:38:01.885353 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.dim_zones, now model.taxi_rides_ny.stg_fhv_tripdata)
+[0m23:38:01.885353 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:38:01.887880 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_fhv_tripdata"
+[0m23:38:01.888876 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:38:01.901372 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_fhv_tripdata"
+[0m23:38:01.902372 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_fhv_tripdata"} */
+
+
+  create or replace view `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+ 
+  select *
+     `tough-timing-449701-k0`.`taxi_data`.`fhv_tripdata`
+  where dispatching_base_num is not null 
+
+-- dbt build --select <model.sql> --vars '{'is_test_run: false}'
+;
+
+
+[0m23:38:01.902372 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:38:02.467951 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:b2d57f9c-7e14-4595-b0ca-fe62e3a4fd65&page=queryresults
+[0m23:38:02.468965 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:b2d57f9c-7e14-4595-b0ca-fe62e3a4fd65&page=queryresults
+[0m23:38:02.549283 [debug] [Thread-1 (]: Database Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)
+  Syntax error: Expected end of input but got identifier `tough-timing-449701-k0` at [9:6]
+  compiled code at target\run\taxi_rides_ny\models\staging\stg_fhv_tripdata.sql
+[0m23:38:02.549283 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4bda525-d23e-43ca-9576-15cd87693b69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3A14CC50>]}
+[0m23:38:02.550291 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model taxi_data_staging.stg_fhv_tripdata ........ [[31mERROR[0m in 0.66s]
+[0m23:38:02.551295 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:38:02.553299 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_fhv_tripdata' to be skipped because of status 'error'.  Reason: Database Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)
+  Syntax error: Expected end of input but got identifier `tough-timing-449701-k0` at [9:6]
+  compiled code at target\run\taxi_rides_ny\models\staging\stg_fhv_tripdata.sql.
+[0m23:38:02.557827 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:38:02.557827 [info ] [Thread-1 (]: 3 of 3 SKIP relation taxi_data_core.dim_fhv_trips .............................. [[33mSKIP[0m]
+[0m23:38:02.558827 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:38:02.560759 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:38:02.565280 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:38:02.565280 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:38:02.566785 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data_core' was properly closed.
+[0m23:38:02.566785 [debug] [MainThread]: Connection 'model.taxi_rides_ny.stg_fhv_tripdata' was properly closed.
+[0m23:38:02.568617 [info ] [MainThread]: 
+[0m23:38:02.571622 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 10.66 seconds (10.66s).
+[0m23:38:02.575633 [debug] [MainThread]: Command end result
+[0m23:38:02.734249 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:38:02.745108 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:38:02.769590 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:38:02.771591 [info ] [MainThread]: 
+[0m23:38:02.774589 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:38:02.777095 [info ] [MainThread]: 
+[0m23:38:02.779099 [error] [MainThread]:   Database Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)
+  Syntax error: Expected end of input but got identifier `tough-timing-449701-k0` at [9:6]
+  compiled code at target\run\taxi_rides_ny\models\staging\stg_fhv_tripdata.sql
+[0m23:38:02.781107 [info ] [MainThread]: 
+[0m23:38:02.783098 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=1 TOTAL=3
+[0m23:38:02.791242 [debug] [MainThread]: Command `dbt run` failed at 23:38:02.791242 after 16.49 seconds
+[0m23:38:02.795250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C04686F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C7F89E910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C064674D0>]}
+[0m23:38:02.796764 [debug] [MainThread]: Flushing usage events
+[0m23:38:03.851157 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:39:32.382081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E8ACC3F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E8AC6FF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E8AC6F890>]}
+
+
+============================== 23:39:32.386080 | 4518f965-36d8-470e-8039-5632d4134b76 ==============================
+[0m23:39:32.386080 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:39:32.387081 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select +dim_fhv_trips', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:39:34.176390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBDAF3910>]}
+[0m23:39:34.320589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E881D9B10>]}
+[0m23:39:34.322596 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:39:35.724968 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:39:36.206392 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:39:36.208396 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\staging\stg_fhv_tripdata.sql
+[0m23:39:36.827307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBDF35C90>]}
+[0m23:39:37.164923 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:39:37.176440 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:39:37.229556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF238390>]}
+[0m23:39:37.231554 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:39:37.233549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF2E2A90>]}
+[0m23:39:37.238076 [info ] [MainThread]: 
+[0m23:39:37.239072 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:39:37.239072 [info ] [MainThread]: 
+[0m23:39:37.243072 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:39:37.260132 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:39:37.261130 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:39:37.834967 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:39:38.287330 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data_staging'
+[0m23:39:38.288343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:39:38.795127 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:39:38.795632 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:39:39.289741 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_core, now list_tough-timing-449701-k0_taxi_data)
+[0m23:39:39.292752 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:39:39.841269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF2B0C10>]}
+[0m23:39:39.842505 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:39:39.849192 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_zones
+[0m23:39:39.851425 [info ] [Thread-1 (]: 1 of 3 START sql table model taxi_data_core.dim_zones .......................... [RUN]
+[0m23:39:39.853421 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.dim_zones'
+[0m23:39:39.853421 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_zones
+[0m23:39:39.866918 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_zones"
+[0m23:39:39.868956 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_zones
+[0m23:39:39.892286 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:39:40.410112 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_zones"
+[0m23:39:40.411112 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_zones: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_zones"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+    locationid, 
+    borough, 
+    zone, 
+    replace(service_zone,'Boro','Green') as service_zone 
+from `tough-timing-449701-k0`.`taxi_data`.`taxi_zone_lookup`
+    );
+  
+[0m23:39:40.824757 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:2fe6e91a-330a-4067-8100-b14a44a68a29&page=queryresults
+[0m23:39:42.784742 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBDFE40D0>]}
+[0m23:39:42.784742 [info ] [Thread-1 (]: 1 of 3 OK created sql table model taxi_data_core.dim_zones ..................... [[32mCREATE TABLE (265.0 rows, 14.2 KiB processed)[0m in 2.93s]
+[0m23:39:42.786037 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_zones
+[0m23:39:42.787039 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:39:42.787039 [info ] [Thread-1 (]: 2 of 3 START sql view model taxi_data_staging.stg_fhv_tripdata ................. [RUN]
+[0m23:39:42.788127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.dim_zones, now model.taxi_rides_ny.stg_fhv_tripdata)
+[0m23:39:42.788127 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:39:42.791109 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_fhv_tripdata"
+[0m23:39:42.791109 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:39:42.803185 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_fhv_tripdata"
+[0m23:39:42.805693 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_fhv_tripdata"} */
+
+
+  create or replace view `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+ 
+  select * FROM
+     `tough-timing-449701-k0`.`taxi_data`.`fhv_tripdata`
+  where dispatching_base_num is not null 
+
+-- dbt build --select <model.sql> --vars '{'is_test_run: false}'
+;
+
+
+[0m23:39:42.808695 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:43.477785 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:a56965d0-eaa7-41e3-8180-ea963966cfb1&page=queryresults
+[0m23:39:43.897013 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF5CE850>]}
+[0m23:39:43.897013 [info ] [Thread-1 (]: 2 of 3 OK created sql view model taxi_data_staging.stg_fhv_tripdata ............ [[32mCREATE VIEW (0 processed)[0m in 1.11s]
+[0m23:39:43.898026 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_fhv_tripdata
+[0m23:39:43.900017 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:39:43.900017 [info ] [Thread-1 (]: 3 of 3 START sql table model taxi_data_core.dim_fhv_trips ...................... [RUN]
+[0m23:39:43.901017 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.stg_fhv_tripdata, now model.taxi_rides_ny.dim_fhv_trips)
+[0m23:39:43.901017 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_fhv_trips
+[0m23:39:43.904019 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:39:43.905018 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_fhv_trips
+[0m23:39:43.906528 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:39:43.907532 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_fhv_trips: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_fhv_trips"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with fhv_data as (
+    select *
+    from `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+), 
+dim_zones as (
+    select * from `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+    where borough != 'Unknown'
+),
+select *,
+    SAFE_CAST(format_date('%Y', date(fhv_data.pickup_datetime)) AS INTEGER) as pickup_year,
+    SAFE_CAST(format_date('%m', date(fhv_data.pickup_datetime)) AS INTEGER) as pickup_month,
+    timestamp_diff(fhv_data.dropoff_datetime, fhv_data.pickup_datetime, minute) as trip_duration
+ from fhv_data f 
+INNER JOIN dim_zones z on f.PULocationID = z.locationid
+    );
+  
+[0m23:39:43.907532 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:39:44.385862 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:f7e99e41-5a6b-45cb-9b20-f1ed734ca36c&page=queryresults
+[0m23:39:44.385862 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:f7e99e41-5a6b-45cb-9b20-f1ed734ca36c&page=queryresults
+[0m23:39:44.389853 [debug] [Thread-1 (]: Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Syntax error: Trailing comma after the WITH clause before the main query is not allowed at [23:1]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql
+[0m23:39:44.390853 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4518f965-36d8-470e-8039-5632d4134b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF6D2850>]}
+[0m23:39:44.391857 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model taxi_data_core.dim_fhv_trips ............. [[31mERROR[0m in 0.49s]
+[0m23:39:44.392852 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:39:44.394853 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.dim_fhv_trips' to be skipped because of status 'error'.  Reason: Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Syntax error: Trailing comma after the WITH clause before the main query is not allowed at [23:1]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql.
+[0m23:39:44.400366 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:39:44.404880 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:39:44.406892 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:39:44.409884 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data' was properly closed.
+[0m23:39:44.411892 [debug] [MainThread]: Connection 'model.taxi_rides_ny.dim_fhv_trips' was properly closed.
+[0m23:39:44.414883 [info ] [MainThread]: 
+[0m23:39:44.419190 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 7.17 seconds (7.17s).
+[0m23:39:44.424694 [debug] [MainThread]: Command end result
+[0m23:39:44.583798 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:39:44.592818 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:39:44.614704 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:39:44.618022 [info ] [MainThread]: 
+[0m23:39:44.621018 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:39:44.624017 [info ] [MainThread]: 
+[0m23:39:44.627536 [error] [MainThread]:   Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Syntax error: Trailing comma after the WITH clause before the main query is not allowed at [23:1]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql
+[0m23:39:44.630538 [info ] [MainThread]: 
+[0m23:39:44.633536 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m23:39:44.640062 [debug] [MainThread]: Command `dbt run` failed at 23:39:44.640062 after 12.34 seconds
+[0m23:39:44.642054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E8ACE7FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E8642F450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E881C0F10>]}
+[0m23:39:44.645053 [debug] [MainThread]: Flushing usage events
+[0m23:39:46.353963 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:44:11.883897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023700170850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002377EF8E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023700173E90>]}
+
+
+============================== 23:44:11.886899 | 95de9791-2631-459e-82bc-dfc9085e4e5f ==============================
+[0m23:44:11.886899 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:44:11.888907 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select +dim_fhv_trips', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:44:12.768185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '95de9791-2631-459e-82bc-dfc9085e4e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002377E5A6150>]}
+[0m23:44:12.803181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '95de9791-2631-459e-82bc-dfc9085e4e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002377B72C1D0>]}
+[0m23:44:12.804128 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:44:13.119388 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:44:13.275495 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:44:13.276494 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\dim_fhv_trips.sql
+[0m23:44:13.444262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '95de9791-2631-459e-82bc-dfc9085e4e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237334FE7D0>]}
+[0m23:44:13.845637 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:44:13.864291 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:44:13.968987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '95de9791-2631-459e-82bc-dfc9085e4e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023733823B90>]}
+[0m23:44:13.971897 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:44:13.975979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95de9791-2631-459e-82bc-dfc9085e4e5f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237338B4FD0>]}
+[0m23:44:13.985982 [info ] [MainThread]: 
+[0m23:44:13.987892 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:44:13.990892 [info ] [MainThread]: 
+[0m23:44:13.994893 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:44:14.011902 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:44:14.015893 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:44:14.770250 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:44:14.806251 [debug] [ThreadPool]: BigQuery adapter: Retry attempt 1 of 1 after error: TransportError(ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))))
+[0m23:44:15.413901 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data_staging'
+[0m23:44:15.416812 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:44:16.015842 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data)
+[0m23:44:16.018937 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:44:16.588478 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:44:16.588478 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:44:17.038281 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:44:17.047288 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:44:17.049280 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:44:17.051281 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data_core' was properly closed.
+[0m23:44:17.055280 [info ] [MainThread]: 
+[0m23:44:17.059281 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.06 seconds (3.06s).
+[0m23:44:17.063486 [error] [MainThread]: Encountered an error:
+
+[0m23:44:17.124455 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\requires.py", line 328, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\cli\main.py", line 578, in run
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\task\runnable.py", line 588, in run
+    result = self.execute_with_hooks(selected_uids)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\task\runnable.py", line 526, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\task\run.py", line 995, in before_run
+    self.populate_adapter_cache(adapter, required_schemas)
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\task\runnable.py", line 492, in populate_adapter_cache
+    adapter.set_relations_cache(cachable_nodes)
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\adapters\base\impl.py", line 577, in set_relations_cache
+    self._relations_cache_for_schemas(relation_configs, required_schemas)
+  File "C:\Users\watan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\dbt\adapters\base\impl.py", line 550, in _relations_cache_for_schemas
+    for future in as_completed(futures):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 243, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 327, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+[0m23:44:17.133461 [debug] [MainThread]: Command `dbt run` failed at 23:44:17.133461 after 5.32 seconds
+[0m23:44:17.135462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023700167890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023700167C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023700167AD0>]}
+[0m23:44:17.138463 [debug] [MainThread]: Flushing usage events
+[0m23:44:25.437725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900C46EC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900C4C7150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900C46ED90>]}
+
+
+============================== 23:44:25.441731 | c8c6cb43-c6da-425a-aa71-c2e3dbaeb955 ==============================
+[0m23:44:25.441731 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:44:25.446731 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select dim_fhv_trips', 'send_anonymous_usage_stats': 'True'}
+[0m23:44:26.349250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900A8BF190>]}
+[0m23:44:26.383355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190079ED910>]}
+[0m23:44:26.383355 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:44:26.673255 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:44:26.793193 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:44:26.794185 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:44:26.827277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903F97D850>]}
+[0m23:44:26.886407 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:44:26.889406 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:44:26.903407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903F9EC610>]}
+[0m23:44:26.904407 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:44:26.905408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903F7EC8D0>]}
+[0m23:44:26.906408 [info ] [MainThread]: 
+[0m23:44:26.907408 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:44:26.907408 [info ] [MainThread]: 
+[0m23:44:26.908408 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:44:26.910411 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:44:26.911410 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:44:27.434849 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data'
+[0m23:44:27.437852 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:44:28.023826 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data, now list_tough-timing-449701-k0_taxi_data_staging)
+[0m23:44:28.033833 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:44:28.551477 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:44:28.555399 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:44:29.063328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903F453890>]}
+[0m23:44:29.065407 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:44:29.075802 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:44:29.077801 [info ] [Thread-1 (]: 1 of 1 START sql table model taxi_data_core.dim_fhv_trips ...................... [RUN]
+[0m23:44:29.081810 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.dim_fhv_trips'
+[0m23:44:29.084810 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_fhv_trips
+[0m23:44:29.117809 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:44:29.123806 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_fhv_trips
+[0m23:44:29.262604 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:44:29.268525 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_fhv_trips: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_fhv_trips"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with fhv_data as (
+    select *
+    from `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+), 
+dim_zones as (
+    select * from `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+    where borough != 'Unknown'
+)
+select 
+    f.unique_row_id,
+    f.pickup_datetime,
+    f.dropoff_datetime,
+    f.PULocationID,
+    f.DOLocationID,
+    SAFE_CAST(format_date('%Y', date(fhv_data.pickup_datetime)) AS INTEGER) as pickup_year,
+    SAFE_CAST(format_date('%m', date(fhv_data.pickup_datetime)) AS INTEGER) as pickup_month,
+    timestamp_diff(fhv_data.dropoff_datetime, fhv_data.pickup_datetime, minute) as trip_duration
+ from fhv_data f 
+INNER JOIN 
+(SELECT locationid, zone as pickup_zone FROM dim_zones) puz on f.PULocationID = puz.locationid
+INNER JOIN 
+(SELECT locationid, zone as dropoff_zone FROM dim_zones) puz on f.PULocationID = puz.locationid
+    );
+  
+[0m23:44:29.270607 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:44:30.896384 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:cd20e9cf-e1af-4986-b22f-da66267c0b6c&page=queryresults
+[0m23:44:31.114794 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:cd20e9cf-e1af-4986-b22f-da66267c0b6c&page=queryresults
+[0m23:44:31.118762 [debug] [Thread-1 (]: Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Duplicate table alias puz in the same FROM clause at [36:58]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql
+[0m23:44:31.120753 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8c6cb43-c6da-425a-aa71-c2e3dbaeb955', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903FC27A50>]}
+[0m23:44:31.123775 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model taxi_data_core.dim_fhv_trips ............. [[31mERROR[0m in 2.04s]
+[0m23:44:31.125778 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:44:31.126675 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.dim_fhv_trips' to be skipped because of status 'error'.  Reason: Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Duplicate table alias puz in the same FROM clause at [36:58]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql.
+[0m23:44:31.131684 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:44:31.138323 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:44:31.139965 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:44:31.141603 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data_core' was properly closed.
+[0m23:44:31.142645 [debug] [MainThread]: Connection 'model.taxi_rides_ny.dim_fhv_trips' was properly closed.
+[0m23:44:31.145261 [info ] [MainThread]: 
+[0m23:44:31.147436 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.24 seconds (4.24s).
+[0m23:44:31.151076 [debug] [MainThread]: Command end result
+[0m23:44:31.479201 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:44:31.489882 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:44:31.509877 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:44:31.511885 [info ] [MainThread]: 
+[0m23:44:31.514882 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:44:31.516873 [info ] [MainThread]: 
+[0m23:44:31.519792 [error] [MainThread]:   Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Duplicate table alias puz in the same FROM clause at [36:58]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql
+[0m23:44:31.521805 [info ] [MainThread]: 
+[0m23:44:31.524879 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m23:44:31.529791 [debug] [MainThread]: Command `dbt run` failed at 23:44:31.529791 after 6.18 seconds
+[0m23:44:31.531802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903FD26210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903FD269D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903FD25110>]}
+[0m23:44:31.533791 [debug] [MainThread]: Flushing usage events
+[0m23:44:32.177975 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:45:31.767217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F2E6F650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F2E6C110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F2E6FD10>]}
+
+
+============================== 23:45:31.770733 | 70e07b48-7972-4dfb-ba31-9fe04b965876 ==============================
+[0m23:45:31.770733 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:45:31.771732 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select dim_fhv_trips', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:45:32.789963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F29FBD10>]}
+[0m23:45:32.828953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F04DDA50>]}
+[0m23:45:32.828953 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:45:33.150246 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:45:33.747930 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:45:33.750932 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\dim_fhv_trips.sql
+[0m23:45:34.722266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9A8A1C850>]}
+[0m23:45:35.242143 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:45:35.264057 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:45:35.364876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9A891BC10>]}
+[0m23:45:35.366908 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:45:35.369000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9A8CC2710>]}
+[0m23:45:35.375028 [info ] [MainThread]: 
+[0m23:45:35.378940 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:45:35.380953 [info ] [MainThread]: 
+[0m23:45:35.384508 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:45:35.388508 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:45:35.390515 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:45:35.677457 [debug] [ThreadPool]: BigQuery adapter: Retry attempt 1 of 1 after error: ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)))
+[0m23:45:35.677457 [warn ] [ThreadPool]: BigQuery adapter: Reopening connection after ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)))
+[0m23:45:36.754899 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data'
+[0m23:45:36.757905 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:45:37.356306 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:45:37.403181 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:45:37.888118 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_core, now list_tough-timing-449701-k0_taxi_data_staging)
+[0m23:45:37.889107 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:45:38.393348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9A8B30C10>]}
+[0m23:45:38.396364 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:45:38.410350 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:45:38.413349 [info ] [Thread-1 (]: 1 of 1 START sql table model taxi_data_core.dim_fhv_trips ...................... [RUN]
+[0m23:45:38.417350 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.dim_fhv_trips'
+[0m23:45:38.420349 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_fhv_trips
+[0m23:45:38.449349 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:45:38.453357 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_fhv_trips
+[0m23:45:38.599389 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:45:38.605373 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_fhv_trips: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_fhv_trips"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with fhv_data as (
+    select *
+    from `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+), 
+dim_zones as (
+    select * from `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+    where borough != 'Unknown'
+)
+select 
+    f.unique_row_id,
+    f.pickup_datetime,
+    f.dropoff_datetime,
+    f.PULocationID as pickup_locationid,
+    puz.pickup_zone,
+    f.DOLocationID as dropoff_locationid,
+    doz.dropoff_zone,
+    SAFE_CAST(format_date('%Y', date(fhv_data.pickup_datetime)) AS INTEGER) as pickup_year,
+    SAFE_CAST(format_date('%m', date(fhv_data.pickup_datetime)) AS INTEGER) as pickup_month,
+    timestamp_diff(fhv_data.dropoff_datetime, fhv_data.pickup_datetime, minute) as trip_duration
+
+ from fhv_data f 
+INNER JOIN 
+(SELECT locationid, zone as pickup_zone FROM dim_zones) puz on f.PULocationID = puz.locationid
+INNER JOIN 
+(SELECT locationid, zone as dropoff_zone FROM dim_zones) doz on f.PULocationID = doz.locationid
+    );
+  
+[0m23:45:38.607373 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:45:39.670276 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:ea5218fa-073d-41c5-a2d7-0ffa064297ed&page=queryresults
+[0m23:45:39.862306 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:ea5218fa-073d-41c5-a2d7-0ffa064297ed&page=queryresults
+[0m23:45:39.870387 [debug] [Thread-1 (]: Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Unrecognized name: fhv_data at [31:38]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql
+[0m23:45:39.872351 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '70e07b48-7972-4dfb-ba31-9fe04b965876', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9A85D1C50>]}
+[0m23:45:39.872351 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model taxi_data_core.dim_fhv_trips ............. [[31mERROR[0m in 1.46s]
+[0m23:45:39.873301 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:45:39.876305 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.dim_fhv_trips' to be skipped because of status 'error'.  Reason: Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Unrecognized name: fhv_data at [31:38]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql.
+[0m23:45:39.881306 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:45:39.887311 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:45:39.889415 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:45:39.891404 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data_staging' was properly closed.
+[0m23:45:39.893416 [debug] [MainThread]: Connection 'model.taxi_rides_ny.dim_fhv_trips' was properly closed.
+[0m23:45:39.895415 [info ] [MainThread]: 
+[0m23:45:39.898403 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.51 seconds (4.51s).
+[0m23:45:39.902405 [debug] [MainThread]: Command end result
+[0m23:45:40.026619 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:45:40.036622 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:45:40.059386 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:45:40.062415 [info ] [MainThread]: 
+[0m23:45:40.065417 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:45:40.067413 [info ] [MainThread]: 
+[0m23:45:40.070410 [error] [MainThread]:   Database Error in model dim_fhv_trips (models\core\dim_fhv_trips.sql)
+  Unrecognized name: fhv_data at [31:38]
+  compiled code at target\run\taxi_rides_ny\models\core\dim_fhv_trips.sql
+[0m23:45:40.072904 [info ] [MainThread]: 
+[0m23:45:40.076298 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m23:45:40.082298 [debug] [MainThread]: Command `dbt run` failed at 23:45:40.082298 after 8.39 seconds
+[0m23:45:40.084297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F2E63910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F2E63C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9F2E63AD0>]}
+[0m23:45:40.087291 [debug] [MainThread]: Flushing usage events
+[0m23:45:40.830208 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:46:47.174919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F735F6DD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F735E6A3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F735E68690>]}
+
+
+============================== 23:46:47.178929 | 997365dd-2c59-46d8-af37-8edba77c3e8c ==============================
+[0m23:46:47.178929 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:46:47.179935 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select dim_fhv_trips', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:46:48.054542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F768F1F350>]}
+[0m23:46:48.090722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7325298D0>]}
+[0m23:46:48.091734 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:46:48.371577 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:46:48.513160 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:46:48.514158 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\dim_fhv_trips.sql
+[0m23:46:48.674949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76A2FDF90>]}
+[0m23:46:48.849489 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:46:48.869464 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:46:48.974258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76A33B4D0>]}
+[0m23:46:48.977361 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:46:48.980262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76A7BC6D0>]}
+[0m23:46:48.990433 [info ] [MainThread]: 
+[0m23:46:48.994434 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:46:48.996461 [info ] [MainThread]: 
+[0m23:46:49.002354 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:46:49.011046 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:46:49.014145 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:49.836413 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data_staging'
+[0m23:46:49.839425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:50.508007 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:46:50.511019 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:46:51.076342 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_core, now list_tough-timing-449701-k0_taxi_data)
+[0m23:46:51.076342 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:46:51.623297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F765973F10>]}
+[0m23:46:51.626282 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:46:51.638280 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:46:51.641292 [info ] [Thread-1 (]: 1 of 1 START sql table model taxi_data_core.dim_fhv_trips ...................... [RUN]
+[0m23:46:51.645289 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.dim_fhv_trips'
+[0m23:46:51.647289 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_fhv_trips
+[0m23:46:51.679289 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:46:51.684280 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_fhv_trips
+[0m23:46:51.830617 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:46:51.834578 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_fhv_trips: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_fhv_trips"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with fhv_data as (
+    select *
+    from `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+), 
+dim_zones as (
+    select * from `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+    where borough != 'Unknown'
+)
+select 
+    f.unique_row_id,
+    f.pickup_datetime,
+    f.dropoff_datetime,
+    f.PULocationID as pickup_locationid,
+    puz.pickup_zone,
+    f.DOLocationID as dropoff_locationid,
+    doz.dropoff_zone,
+    SAFE_CAST(format_date('%Y', date(f.pickup_datetime)) AS INTEGER) as pickup_year,
+    SAFE_CAST(format_date('%m', date(f.pickup_datetime)) AS INTEGER) as pickup_month,
+    timestamp_diff(f.dropoff_datetime, f.pickup_datetime, minute) as trip_duration
+
+ from fhv_data f 
+INNER JOIN 
+(SELECT locationid, zone as pickup_zone FROM dim_zones) puz on f.PULocationID = puz.locationid
+INNER JOIN 
+(SELECT locationid, zone as dropoff_zone FROM dim_zones) doz on f.PULocationID = doz.locationid
+    );
+  
+[0m23:46:51.837910 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:46:52.952392 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:912a69cc-a394-4a57-89d7-57f06cda729b&page=queryresults
+[0m23:46:58.579897 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '997365dd-2c59-46d8-af37-8edba77c3e8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F768FAF490>]}
+[0m23:46:58.579897 [info ] [Thread-1 (]: 1 of 1 OK created sql table model taxi_data_core.dim_fhv_trips ................. [[32mCREATE TABLE (23.9m rows, 2.3 GiB processed)[0m in 6.93s]
+[0m23:46:58.581036 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:46:58.583998 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:46:58.589899 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:46:58.591983 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:46:58.593986 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data' was properly closed.
+[0m23:46:58.595977 [debug] [MainThread]: Connection 'model.taxi_rides_ny.dim_fhv_trips' was properly closed.
+[0m23:46:58.597992 [info ] [MainThread]: 
+[0m23:46:58.601898 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 9.60 seconds (9.60s).
+[0m23:46:58.604969 [debug] [MainThread]: Command end result
+[0m23:46:58.730146 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:46:58.741137 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:46:58.765151 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:46:58.768141 [info ] [MainThread]: 
+[0m23:46:58.772150 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:46:58.775134 [info ] [MainThread]: 
+[0m23:46:58.778138 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m23:46:58.784051 [debug] [MainThread]: Command `dbt run` succeeded at 23:46:58.784051 after 11.67 seconds
+[0m23:46:58.786056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F735FE7DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F735FE7F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7317BE8D0>]}
+[0m23:46:58.787056 [debug] [MainThread]: Flushing usage events
+[0m23:47:00.489950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:50:10.186615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F5B6F450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F5B6F290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F5B6F8D0>]}
+
+
+============================== 23:50:10.190616 | efe315fa-7a34-4ccb-a88e-25cd6325427d ==============================
+[0m23:50:10.190616 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:50:10.191616 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select fct_fhv_monthly_zone_traveltime_p90', 'send_anonymous_usage_stats': 'True'}
+[0m23:50:11.211473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C602A99AD0>]}
+[0m23:50:11.248464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F31D9B90>]}
+[0m23:50:11.248464 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:50:11.551037 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:50:11.706511 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:50:11.707512 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\fct_fhv_monthly_zone_traveltime_p90.sql
+[0m23:50:12.627370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6042CE7D0>]}
+[0m23:50:13.209937 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:50:13.229943 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:50:13.333513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C602F2E2D0>]}
+[0m23:50:13.336585 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:50:13.339601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C602EF86D0>]}
+[0m23:50:13.346601 [info ] [MainThread]: 
+[0m23:50:13.348594 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:50:13.352509 [info ] [MainThread]: 
+[0m23:50:13.355510 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:50:13.359500 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:50:13.362499 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:50:15.151265 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data'
+[0m23:50:15.154256 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:50:15.753315 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:50:15.774496 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:50:16.428803 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_core, now list_tough-timing-449701-k0_taxi_data_staging)
+[0m23:50:16.433405 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:50:16.900535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C604272E10>]}
+[0m23:50:16.902545 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:50:16.914542 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:16.917536 [info ] [Thread-1 (]: 1 of 1 START sql table model taxi_data_core.fct_fhv_monthly_zone_traveltime_p90  [RUN]
+[0m23:50:16.920542 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90'
+[0m23:50:16.923542 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:16.953721 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"
+[0m23:50:16.958708 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:17.094341 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"
+[0m23:50:17.100332 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`fct_fhv_monthly_zone_traveltime_p90`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+
+select 
+    *,
+    PERCENTILE_CONT(fare_amount, 0.90) OVER (
+    PARTITION BY pickup_locationid, pickup_year, pickup_month, dropoff_locationid
+) AS p90
+from `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+where pickup_locationid is not null and dropoff_locationid is not null
+    );
+  
+[0m23:50:17.103332 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:50:17.989182 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:47f68a22-78f4-4b65-96ef-14951842a436&page=queryresults
+[0m23:50:18.192008 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:47f68a22-78f4-4b65-96ef-14951842a436&page=queryresults
+[0m23:50:18.215708 [debug] [Thread-1 (]: Database Error in model fct_fhv_monthly_zone_traveltime_p90 (models\core\fct_fhv_monthly_zone_traveltime_p90.sql)
+  Unrecognized name: fare_amount at [18:21]
+  compiled code at target\run\taxi_rides_ny\models\core\fct_fhv_monthly_zone_traveltime_p90.sql
+[0m23:50:18.217708 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efe315fa-7a34-4ccb-a88e-25cd6325427d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C602FCD010>]}
+[0m23:50:18.217708 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model taxi_data_core.fct_fhv_monthly_zone_traveltime_p90  [[31mERROR[0m in 1.30s]
+[0m23:50:18.218709 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:18.221716 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90' to be skipped because of status 'error'.  Reason: Database Error in model fct_fhv_monthly_zone_traveltime_p90 (models\core\fct_fhv_monthly_zone_traveltime_p90.sql)
+  Unrecognized name: fare_amount at [18:21]
+  compiled code at target\run\taxi_rides_ny\models\core\fct_fhv_monthly_zone_traveltime_p90.sql.
+[0m23:50:18.227707 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:50:18.233713 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:50:18.235715 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:50:18.237708 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data_staging' was properly closed.
+[0m23:50:18.240708 [debug] [MainThread]: Connection 'model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90' was properly closed.
+[0m23:50:18.243715 [info ] [MainThread]: 
+[0m23:50:18.246706 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.89 seconds (4.89s).
+[0m23:50:18.250707 [debug] [MainThread]: Command end result
+[0m23:50:18.378139 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:50:18.389150 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:50:18.410962 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:50:18.412968 [info ] [MainThread]: 
+[0m23:50:18.415963 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:50:18.419884 [info ] [MainThread]: 
+[0m23:50:18.422958 [error] [MainThread]:   Database Error in model fct_fhv_monthly_zone_traveltime_p90 (models\core\fct_fhv_monthly_zone_traveltime_p90.sql)
+  Unrecognized name: fare_amount at [18:21]
+  compiled code at target\run\taxi_rides_ny\models\core\fct_fhv_monthly_zone_traveltime_p90.sql
+[0m23:50:18.424882 [info ] [MainThread]: 
+[0m23:50:18.428874 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m23:50:18.435874 [debug] [MainThread]: Command `dbt run` failed at 23:50:18.434888 after 8.31 seconds
+[0m23:50:18.437881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F5B63810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F5B63F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5F5B63C50>]}
+[0m23:50:18.440882 [debug] [MainThread]: Flushing usage events
+[0m23:50:20.100353 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:50:32.834533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DCBC6DC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DCBCC4550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DCBCC4C10>]}
+
+
+============================== 23:50:32.838534 | 6c5b5acf-2f17-44f4-b644-6f8876a26e7d ==============================
+[0m23:50:32.838534 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:50:32.839542 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select fct_fhv_monthly_zone_traveltime_p90', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:50:33.801734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DFEBD9BD0>]}
+[0m23:50:33.836701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC92D9ED0>]}
+[0m23:50:33.836701 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:50:34.139756 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:50:34.535010 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:50:34.539017 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\fct_fhv_monthly_zone_traveltime_p90.sql
+[0m23:50:35.438517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DFEFF39D0>]}
+[0m23:50:36.008575 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:50:36.027389 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:50:36.125824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D80322090>]}
+[0m23:50:36.129825 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:50:36.133820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D804DEF90>]}
+[0m23:50:36.139820 [info ] [MainThread]: 
+[0m23:50:36.143811 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:50:36.146819 [info ] [MainThread]: 
+[0m23:50:36.149819 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:50:36.154812 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:50:36.156824 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:50:36.767236 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data'
+[0m23:50:36.769243 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:50:37.297944 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data, now list_tough-timing-449701-k0_taxi_data_staging)
+[0m23:50:37.357494 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:50:37.849618 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data_core)
+[0m23:50:37.851608 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:50:38.316547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D8046F890>]}
+[0m23:50:38.317547 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:50:38.338259 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:38.341248 [info ] [Thread-1 (]: 1 of 1 START sql table model taxi_data_core.fct_fhv_monthly_zone_traveltime_p90  [RUN]
+[0m23:50:38.345260 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90'
+[0m23:50:38.348258 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:38.376263 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"
+[0m23:50:38.380207 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:38.522980 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"
+[0m23:50:38.529450 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`fct_fhv_monthly_zone_traveltime_p90`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+
+select 
+    *,
+    PERCENTILE_CONT(trip_duration, 0.90) OVER (
+    PARTITION BY pickup_locationid, pickup_year, pickup_month, dropoff_locationid
+) AS p90
+from `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+where pickup_locationid is not null and dropoff_locationid is not null
+    );
+  
+[0m23:50:38.531448 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:50:39.439623 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:68372cf2-3d49-483e-8a8f-bd33427a9759&page=queryresults
+[0m23:50:44.708642 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c5b5acf-2f17-44f4-b644-6f8876a26e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DFED02CD0>]}
+[0m23:50:44.709673 [info ] [Thread-1 (]: 1 of 1 OK created sql table model taxi_data_core.fct_fhv_monthly_zone_traveltime_p90  [[32mCREATE TABLE (23.9m rows, 2.4 GiB processed)[0m in 6.36s]
+[0m23:50:44.710640 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:50:44.713640 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:50:44.720678 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:50:44.723662 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:50:44.725664 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data_core' was properly closed.
+[0m23:50:44.726672 [debug] [MainThread]: Connection 'model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90' was properly closed.
+[0m23:50:44.729665 [info ] [MainThread]: 
+[0m23:50:44.732671 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 8.58 seconds (8.58s).
+[0m23:50:44.736958 [debug] [MainThread]: Command end result
+[0m23:50:44.864533 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:50:44.876517 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:50:44.899518 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:50:44.901538 [info ] [MainThread]: 
+[0m23:50:44.905518 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:50:44.908519 [info ] [MainThread]: 
+[0m23:50:44.915525 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m23:50:44.925520 [debug] [MainThread]: Command `dbt run` succeeded at 23:50:44.924529 after 12.17 seconds
+[0m23:50:44.927529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DCBCE7FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC754F410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC754E710>]}
+[0m23:50:44.929520 [debug] [MainThread]: Flushing usage events
+[0m23:50:45.573724 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:55:16.768647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5B54C43D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5B54C4350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5B546E050>]}
+
+
+============================== 23:55:16.772645 | 5662d8a2-eae9-4ecd-b491-3978b181ce50 ==============================
+[0m23:55:16.772645 [info ] [MainThread]: Running with dbt=1.9.2
+[0m23:55:16.772645 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\watan\\Documents\\GitHub\\Data-Engineering-Zoomcamp-answers\\Data-Engineering-Zoomcamp-answers\\Module_04\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select dim_fhv_trips+', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:55:17.726450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5B546F850>]}
+[0m23:55:17.762450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5B0A2C150>]}
+[0m23:55:17.762450 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m23:55:18.055185 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m23:55:18.201863 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:55:18.201863 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models\core\dim_fhv_trips.sql
+[0m23:55:18.642159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5B535BA10>]}
+[0m23:55:19.229661 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:55:19.250421 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:55:19.349740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5E8C5D4D0>]}
+[0m23:55:19.352738 [info ] [MainThread]: Found 11 models, 1 seed, 11 data tests, 3 sources, 628 macros
+[0m23:55:19.356739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5E8CD1290>]}
+[0m23:55:19.364812 [info ] [MainThread]: 
+[0m23:55:19.367746 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:55:19.369745 [info ] [MainThread]: 
+[0m23:55:19.372728 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:55:19.387731 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0'
+[0m23:55:19.390731 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:55:20.160812 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_tough-timing-449701-k0_taxi_data_core'
+[0m23:55:20.163819 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:55:20.787392 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_core, now list_tough-timing-449701-k0_taxi_data_staging)
+[0m23:55:20.795443 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:55:21.304082 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tough-timing-449701-k0_taxi_data_staging, now list_tough-timing-449701-k0_taxi_data)
+[0m23:55:21.305096 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:55:21.918155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5E882F2D0>]}
+[0m23:55:21.920130 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:55:21.934145 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:55:21.937123 [info ] [Thread-1 (]: 1 of 2 START sql table model taxi_data_core.dim_fhv_trips ...................... [RUN]
+[0m23:55:21.941122 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.taxi_rides_ny.dim_fhv_trips'
+[0m23:55:21.944132 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_fhv_trips
+[0m23:55:21.970046 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:55:21.975046 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_fhv_trips
+[0m23:55:22.024897 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:55:22.656889 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_fhv_trips"
+[0m23:55:22.657889 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_fhv_trips: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_fhv_trips"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with fhv_data as (
+    select *
+    from `tough-timing-449701-k0`.`taxi_data_staging`.`stg_fhv_tripdata`
+), 
+dim_zones as (
+    select * from `tough-timing-449701-k0`.`taxi_data_core`.`dim_zones`
+    where borough != 'Unknown'
+)
+select 
+    f.unique_row_id,
+    f.pickup_datetime,
+    f.dropoff_datetime,
+    f.PULocationID as pickup_locationid,
+    puz.pickup_zone,
+    f.DOLocationID as dropoff_locationid,
+    doz.dropoff_zone,
+    SAFE_CAST(format_date('%Y', date(f.pickup_datetime)) AS INTEGER) as pickup_year,
+    SAFE_CAST(format_date('%m', date(f.pickup_datetime)) AS INTEGER) as pickup_month,
+    timestamp_diff(f.dropoff_datetime, f.pickup_datetime, minute) as trip_duration
+
+ from fhv_data f 
+INNER JOIN 
+(SELECT locationid, zone as pickup_zone FROM dim_zones) puz on f.PULocationID = puz.locationid
+INNER JOIN 
+(SELECT locationid, zone as dropoff_zone FROM dim_zones) doz on f.DOLocationID = doz.locationid
+    );
+  
+[0m23:55:23.252195 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:6049e49d-fc2e-4cc2-baa8-71052cf46f6f&page=queryresults
+[0m23:55:28.815525 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5E886D090>]}
+[0m23:55:28.815525 [info ] [Thread-1 (]: 1 of 2 OK created sql table model taxi_data_core.dim_fhv_trips ................. [[32mCREATE TABLE (23.0m rows, 2.3 GiB processed)[0m in 6.87s]
+[0m23:55:28.816531 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_fhv_trips
+[0m23:55:28.818673 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:55:28.818673 [info ] [Thread-1 (]: 2 of 2 START sql table model taxi_data_core.fct_fhv_monthly_zone_traveltime_p90  [RUN]
+[0m23:55:28.819577 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.dim_fhv_trips, now model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90)
+[0m23:55:28.820530 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:55:28.821530 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"
+[0m23:55:28.822530 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:55:28.823530 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:55:29.342861 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"
+[0m23:55:29.343864 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90"} */
+
+  
+    
+
+    create or replace table `tough-timing-449701-k0`.`taxi_data_core`.`fct_fhv_monthly_zone_traveltime_p90`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+
+select 
+    *,
+    PERCENTILE_CONT(trip_duration, 0.90) OVER (
+    PARTITION BY pickup_locationid, pickup_year, pickup_month, dropoff_locationid
+) AS p90
+from `tough-timing-449701-k0`.`taxi_data_core`.`dim_fhv_trips`
+where pickup_locationid is not null and dropoff_locationid is not null
+    );
+  
+[0m23:55:29.722475 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=tough-timing-449701-k0&j=bq:us-east1:dfad7cb8-82a4-4ad3-a07d-acaee3fe2e1a&page=queryresults
+[0m23:55:34.894503 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5662d8a2-eae9-4ecd-b491-3978b181ce50', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5E8F98E10>]}
+[0m23:55:34.895537 [info ] [Thread-1 (]: 2 of 2 OK created sql table model taxi_data_core.fct_fhv_monthly_zone_traveltime_p90  [[32mCREATE TABLE (23.0m rows, 2.3 GiB processed)[0m in 6.07s]
+[0m23:55:34.896553 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90
+[0m23:55:34.899456 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:55:34.908544 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:55:34.911645 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0' was properly closed.
+[0m23:55:34.913560 [debug] [MainThread]: Connection 'list_tough-timing-449701-k0_taxi_data' was properly closed.
+[0m23:55:34.915555 [debug] [MainThread]: Connection 'model.taxi_rides_ny.fct_fhv_monthly_zone_traveltime_p90' was properly closed.
+[0m23:55:34.916649 [info ] [MainThread]: 
+[0m23:55:34.918555 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 15.54 seconds (15.54s).
+[0m23:55:34.920554 [debug] [MainThread]: Command end result
+[0m23:55:35.039521 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\manifest.json
+[0m23:55:35.050636 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\semantic_manifest.json
+[0m23:55:35.073074 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\watan\Documents\GitHub\Data-Engineering-Zoomcamp-answers\Data-Engineering-Zoomcamp-answers\Module_04\target\run_results.json
+[0m23:55:35.075075 [info ] [MainThread]: 
+[0m23:55:35.079075 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:55:35.083075 [info ] [MainThread]: 
+[0m23:55:35.087077 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m23:55:35.095076 [debug] [MainThread]: Command `dbt run` succeeded at 23:55:35.094080 after 18.40 seconds
+[0m23:55:35.097068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5AFCAE8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5AFCAE890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5AFCAF450>]}
+[0m23:55:35.101077 [debug] [MainThread]: Flushing usage events
+[0m23:55:35.862369 [debug] [MainThread]: An error was encountered while trying to flush usage events
