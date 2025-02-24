@@ -1,0 +1,16 @@
+version: 2
+
+my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: 'tough-timing-449701-k0'
+      dataset: 'taxi_data'
+      keyfile: 'service_account.json'
+      threads: 1
+      timeout_seconds: 300
+      location: 'us-east1'
+      priority: 'interactive'
+      retries: 1
